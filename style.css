@@ -1,0 +1,99 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mymarginhome{
+    margin-top:100px;
+    margin-bottom: 50x;
+    /* margin-right:50px;
+    margin-left:50px; */ 
+} 
+.homebody{
+    background-image: url("/images/carou2.jpg"); 
+}
+
+/* #carouselHome{
+    height: 500px;;
+} */
+
+#libraryintro{
+    background-color: beige;
+    border:1px solid black;
+    text-align: center;
+    padding:50px;
+
+}
+
+footer{
+    background-color:lightgray;
+    border: 1px solid lightgray;
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+.signup1{
+   border: 1px solid red;
+   margin-top:50px;
+   margin-right:10px;
+   margin-left:50px;
+   margin-bottom:5px;
+   padding: 30px;
+   background-color: beige;
+   font-family: 'Courier New', Courier, monospace;
+
+} 
+#signuplink{
+    float: right;
+}
+.signupbody
+{
+    background-image: url("/images/carou3.jpg");
+}
+.loginform{
+    background-color: beige;
+    padding-top:150px;
+    padding-left: 10px;
+    padding-right: 10px;
+border:1px solid blue;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.loginimage
+{
+    background-color: beige;
+padding: 50px;
+border:1px solid blue;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.loginbody
+{
+    background-image: url("/images/car3.jpg");
+}
+.cardset1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.LoadMore button{
+    padding-right:50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#readalike{
+
+    margin-left: 250px;
+    
+}
+.referbookcard{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
