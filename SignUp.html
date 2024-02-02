@@ -17,7 +17,7 @@
     <div class="container-fluid">
               
           <a class="navbar-brand" href="#">
-            <img src="/images/log2.png" alt="logo" width="100" height="100">
+            <img src="images/log2.png" alt="logo" width="100" height="100">
           </a>
         
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -60,7 +60,7 @@
       <div class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-5  signup1">
-    <form class="signup"  >
+    <form class="signup" onsubmit="return validateSignupPage()" action="index.html"  >
         <h1 style="color:blue;"><center><b></b>Sign Up</center></h1>
         <br>
         <h4><center>Please fill in this form to create an account</center></h4>
@@ -75,29 +75,33 @@
        
         <div class="mb-3">     
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" placeholder= "Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          
+          <input type="text" placeholder= "Email" class="form-control" id="SignUpEmail1" aria-describedby="emailHelp">
+          <span id="SignUpemailmsg"></span>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" placeholder= "Password" class="form-control" id="exampleInputPassword1">
+          <input type="password" placeholder= "Password" class="form-control" id="SignUpPassword" oninput="checkstrengthpwd()">
+          <span id="SignUppwdmsg"></span>
+          <span id="Signuppwdstrengthmsg"></span>
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
-            <input type="password" placeholder= "Please type Password again" class="form-control" id="exampleInputPassword1">
-          </div>
-          <label for="Date of Birth" class="form-label">Date of Birth</label>
-          <input type="date" placeholder= "DOB" class="form-control">
+            <!-- <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+            <input type="password" placeholder= "Please type Password again" class="form-control" id="exampleInputPassword1"> -->
+        
+          <label for="phone number" class="form-label">Phone Number</label>
+          <input type="" placeholder= "Enter phone number" id="SignUpPhone" class="form-control">
+          <span id="Signphonemsg"></span>
           <br>
+        </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Remember me</label>
         </div>
       
         
-        <button type="submit" class="btn btn-primary">SignUp</button>
+        <button type="submit"  class="btn btn-primary" >SignUp</button>
 
-        <a href="Login.html" id="signuplink">Alredy have an Account?</a>
+        <a href="Login.html" id="signuplink">Already have an Account?</a>
       </form>
     </div>
     <!-- registration form ends here -->
@@ -113,7 +117,7 @@
     <p id="lastfooter"><center>Copyrights © 2020 Book Bond Library. All rights reserved </center></p>
   </footer>
     <!-- footer ends here -->
-    
+    <script src="ValidateSignup.js"></script>
     
 </body>
 </html>

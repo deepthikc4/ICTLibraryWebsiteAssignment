@@ -18,7 +18,7 @@
     <div class="container-fluid">
               
           <a class="navbar-brand" href="#">
-            <img src="/images/log2.png" alt="logo" width="100" height="100">
+            <img src="images/log2.png" alt="logo" width="100" height="100">
           </a>
         
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,31 +63,35 @@
     <div class="row ">
       <div class="col-lg-2 "></div>
       <div class="col-lg-4 loginform">
-    <form>
+    <form action="index.html">
       <h3><b><center>Login to Your Account</center></b> </h3>
       <br>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="loginEmail1">
+    
+          <span id="loginemailmsg"></span>
          
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control" id="loginPassword" oninput="checkstrengthpwd()">
+          <div id="loginpwdstrengthmsg"></div>
+      
+          <span id="loginpwdmsg"></span>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Remember Me</label>
         </div>
-        <br>
         <center>
-        <button type="submit" class="btn btn-success">Login</button></center>
+        <button type="submit" onclick="return validateLoginPage()"class="btn btn-success">Login</button></center>
       </form>
     </div>
     <!-- login ends here -->
 <!-- image starts here -->
 <div class="col-lg-4 loginimage">
-<center><img src="/images/login1.png" alt="library" width="300px" height="300px">
+<center><img src="images/login1.png" alt="library" width="300px" height="300px">
 <h5><b>New Here? </b></h5>
 <p> Sign Up and Step into a world where stories come alive, knowledge knows no bounds, and connections are forged.</p>
 <!-- <button type="submit" class="btn btn-success">Sign Up</button> -->
@@ -106,6 +110,6 @@
       <p id="lastfooter">Copyrights © 2020 Book Bond Library. All rights reserved </center></p>
     </footer>
       <!-- footer ends here -->
-      
+    <script src="ValidateLogin.js"></script>  
 </body>
 </html>

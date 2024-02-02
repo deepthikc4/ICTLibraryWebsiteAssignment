@@ -10,7 +10,7 @@
     margin-left:50px; */ 
 } 
 .homebody{
-    background-image: url("/images/carou2.jpg"); 
+    background-image: url("images/carou2.jpg"); 
 }
 
 /* #carouselHome{
@@ -51,7 +51,7 @@ footer{
 }
 .signupbody
 {
-    background-image: url("/images/carou3.jpg");
+    background-image: url("images/carou3.jpg");
 }
 .loginform{
     background-color: beige;
@@ -59,8 +59,8 @@ footer{
     padding-left: 10px;
     padding-right: 10px;
 border:1px solid blue;
-margin-top: 50px;
-margin-bottom: 50px;
+margin-top: 50px; 
+ margin-bottom:100px; 
 }
 .loginimage
 {
@@ -68,11 +68,11 @@ margin-bottom: 50px;
 padding: 50px;
 border:1px solid blue;
 margin-top: 50px;
-margin-bottom: 50px;
+margin-bottom: 100px;
 }
 .loginbody
 {
-    background-image: url("/images/car3.jpg");
+    background-image: url("images/car3.jpg");
 }
 .cardset1{
     margin-top: 20px;
